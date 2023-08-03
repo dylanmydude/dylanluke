@@ -222,6 +222,35 @@ body.special-page div#header a#logo {
   gap: 1px;  
 }
 
+#main-content-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px; /* Adjust this value according to the height of navbar */
+}
+
+.photo-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.photo-grid .portfolio-item {
+  position: relative;
+  width: 100%;
+}
+
+.photo-grid .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes sure the images scale while keeping their aspect ratio */
+}
+
+
+
 /* blog page */
 .blog-page h2, .blog-page p {
   text-align: left;
