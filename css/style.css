@@ -39,6 +39,33 @@ body div#header a#logo {
   font-size: 50px;
 }
 
+@media (max-width: 768px) {
+  .columns-container {
+    flex-direction: column;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #navbar li {
+    display: block;
+    margin-right: 0;
+  }
+  #navbar li a {
+    font-size: 16px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  #contact-info {
+    padding-left: 20px;
+  }
+}
+
+
 #navbar ul {
   list-style-type: none;
   margin: 0;
@@ -255,6 +282,24 @@ body.special-page div#header a#logo {
 .blog-page h2, .blog-page p {
   text-align: left;
 }
+
+blockquote {
+  border-left: 3px solid #999;
+  padding-left: 10px;
+  margin: 20px;
+  font-style: italic;
+}
+
+blockquote footer {
+  text-align: right;
+  color: #999;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 #about {
